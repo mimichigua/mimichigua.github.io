@@ -1,26 +1,41 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+ 
+ <bgsound src="mp3/Let It Go - Idina Menzel.mp3" >
 </head>
  
  
  <body>
  
- <img src="../imgs/main.jpg" width="100%" />
+ <img src="imgs/main.jpg" width="100%" />
  <BR><BR>
 <table width="100%" border="0" style="border-collapse:0; border-spacing:0; border-color:#eee;" class="catogary">
 
+
+
   <tr>
     <td><a href="duyinguize/duyinguize.html">读音规则</a></td>
-     
+    
+   
 
   </tr>
 </table>
-<audio src="http://music.163.com/song/media/outer/url?id=29769459.mp3" autoplay="true" playcount="-1"></audio>
+
+
+
+
+
+
 <!--
 <embed  src="http://music.163.com/song/media/outer/url?id=29769459.mp3"  autostart=true loop=2 hidden="false"></embed>-->
 
-<script>
+
+<audio id="Jaudio" class="media-audio" src="http://music.163.com/song/media/outer/url?id=29769459.mp3" autoplay preload loop="loop"></audio >
+
+<!--
+<SCRIPT>
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -33,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     audioAutoPlay();
 });
+
 //--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
 function audioAutoPlay() {
     var audio = document.getElementById('audio');
@@ -42,7 +58,19 @@ function audioAutoPlay() {
 
 document.addEventListener('touchstart', audioAutoPlay);
 </script>
- 
+
+-->
+<script>
+function audioAutoPlay(id){
+    var audio = document.getElementById(id);
+    audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+    }, false);
+}
+audioAutoPlay('Jaudio');
+
+</script>
+
 </body>
 </html>
-
