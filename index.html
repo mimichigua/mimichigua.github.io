@@ -16,7 +16,32 @@
 
   </tr>
 </table>
-<embed  src="http://music.163.com/song/media/outer/url?id=29769459.mp3"  autostart=true loop=2 hidden="false"></embed>
+<audio src="http://music.163.com/song/media/outer/url?id=29769459.mp3" autoplay="true" playcount="-1"></audio>
+<!--
+<embed  src="http://music.163.com/song/media/outer/url?id=29769459.mp3"  autostart=true loop=2 hidden="false"></embed>-->
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+        audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
+//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+function audioAutoPlay() {
+    var audio = document.getElementById('audio');
+    audio.play();
+    document.removeEventListener('touchstart',audioAutoPlay);
+}
+
+document.addEventListener('touchstart', audioAutoPlay);
+</script>
  
 </body>
 </html>
