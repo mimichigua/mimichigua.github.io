@@ -13,8 +13,13 @@
 
 <br />
 <p  class="word-danci">day</p><br />
-
-   <p  class="btn" ><a href="javascript:showduyin();" id="strhref" >点击显示读音</a><p  class="word-duyin" id="mm"  >[deɪ][ɑːsk]</p></p><br />
+<audio id="player">
+        <source src="https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=uk&text=day&spd=2&source=alading"></source>
+</audio>
+    <div style="width: 100%;text-align: center;"><span style="cursor: pointer;" id="start"><img src="../imgs/play.png" width="32" height="33"></span></div>
+   
+<br /><br />
+<p  class="btn" ><a href="javascript:showduyin();" id="strhref" >点击显示读音</a><p  class="word-duyin" id="mm"  >[deɪ]</p></p><br />
 <p class="btn">
    <a href="javascript:showshiyi();" id="getshiyi">点击显示释义</a><p class="word-duyin" id="nn"  >n.一天; 一日<br /><img  src="../imgs/day.jpg" style="text-align:center;"/></p></p>
 
@@ -27,6 +32,16 @@
     <td>下一页</td>
   </tr>
 </table>
+
+
+<script type="text/javascript">
+    document.getElementById('start').onclick = function(){
+        player.play();
+    }
+    document.getElementById('stop').onclick = function(){
+        player.pause();
+    }
+</script>
 
 </body>
 </html>
