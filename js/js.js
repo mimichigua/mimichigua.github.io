@@ -29,12 +29,4 @@
 		
 
 
-    document.getElementById('start').onclick = function(){
-    if (player.paused){    player.play();
-    }
-	
-		else {
-player.pause();
-<!--    document.getElementById('stop').onclick = function(){        player.pause();-->
-    }
-		}
+    
