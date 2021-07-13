@@ -73,5 +73,24 @@ audioAutoPlay('Jaudio');
 </script>
   <video controls="" autoplay="" name="media"><source src="http://m10.music.126.net/20210714010656/8130cd920dafdeb8bf42ee4129be6748/ymusic/4d01/7d83/509a/f4c46cf9cf224675ffd00eebe411613b.mp3" type="audio/mpeg" autoplay preload loop="loop"></video>
 
+  <audio id="bgmusic" src="http://music.163.com/song/media/outer/url?id=29769459.mp3" autoplay preload loop></audio>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>;
+<script type="text/javascript">
+autoPlayAudio1();
+function autoPlayAudio1() {
+wx.config({
+// 配置信息, 即使不正确也能使用 wx.ready
+debug: false,
+appId: '',
+timestamp: 1,
+nonceStr: '',
+signature: '',
+jsApiList: []
+});
+wx.ready(function() {
+document.getElementById('bgmusic').play();
+});
+}
+</script>
 </body>
 </html>
