@@ -4,6 +4,20 @@
  <script type="text/javascript" src="../js/js.js"></script>
  <style>
  body { text-align:center  }
+ 
+ .op_dict3_how_read,.op_dict3_mp3_play {
+        display: block;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        background: url('//www.baidu.com/aladdin/tpl/dict3/no_play_icon.09c44b00.png') no-repeat;
+        background-size: 16px 32px;
+        background-position: 0 1px;
+        text-decoration: none;
+        margin-top: 1px;
+        _margin-top: 11px;
+    }
+	
  </style>
 </head>
 
@@ -16,7 +30,9 @@
 <audio id="player">
         <source src="https://sp0.baidu.com/-rM1hT4a2gU2pMbgoY3K/gettts?lan=uk&text=day&spd=2&source=alading"></source>
 </audio>
-    <div style="width: 100%;text-align: center;"><span style="cursor: pointer;" id="start"><img src="../imgs/play.png" width="32" height="33"></span></div>
+    <div style="width: 100%;text-align: center;"><span style="cursor: pointer;" id="start"><img src="../imgs/play.png" width="32" height="32"></span></div>
+    
+      
    
 <br /><br />
 <p  class="btn" ><a href="javascript:showduyin();" id="strhref" >点击显示读音</a><p  class="word-duyin" id="mm"  >[deɪ]</p></p><br />
@@ -36,12 +52,18 @@
 
 <script type="text/javascript">
     document.getElementById('start').onclick = function(){
-        player.play();
+    if (player.paused){    player.play();
     }
-    document.getElementById('stop').onclick = function(){
-        player.pause();
+	
+		else {
+player.pause();
+<!--    document.getElementById('stop').onclick = function(){        player.pause();-->
     }
+		}
 </script>
+
+
+
 
 </body>
 </html>
