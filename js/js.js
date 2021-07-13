@@ -35,7 +35,6 @@ player.pause();
 <!--    document.getElementById('stop').onclick = function(){        player.pause();-->
     }
 		}
-</script>
 
 
     
