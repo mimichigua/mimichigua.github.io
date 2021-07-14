@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <link rel="stylesheet" type="text/css" href="css/style.css"/>
  
-
+ <bgsound src="../MP3/Let It Go - Idina Menzel.mp33" >
 </head>
  
  
@@ -28,10 +28,10 @@
 
 
 <!--
-<embed  src="../mp3/Let It Go - Idina Menzel.mp3"  autostart=true loop=2 hidden="false"></embed>-->
+<embed  src="../MP3/Let It Go - Idina Menzel.mp3"  autostart=true loop=2 hidden="false"></embed>-->
 
 
-<audio id="Jaudio" class="media-audio" src="../mp3/Let It Go - Idina Menzel.mp3" autoplay preload loop="loop"></audio >
+<audio id="Jaudio" class="media-audio" src="../MP3/Let It Go - Idina Menzel.mp3" autoplay preload loop></audio >
 
 <!--
 <SCRIPT>
@@ -62,19 +62,32 @@ document.addEventListener('touchstart', audioAutoPlay);
 -->
 <script>
 function audioAutoPlay(id){
-    var audio = document.getElementById(id);
+    var audio = document.getElementById(id),
+        play = function(){
+        audio.play();
+        document.removeEventListener("touchstart",play, false);
+    };
     audio.play();
-    document.addEventListener("WeixinJSBridgeReady", function () {
-            audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {//微信
+       play();
     }, false);
+    document.addEventListener('YixinJSBridgeReady', function() {//易信
+              play();
+        }, false);
+    document.addEventListener("touchstart",play, false);
 }
 audioAutoPlay('Jaudio');
 
 </script>
-  <video controls="" autoplay="" name="media"><source src="http://m10.music.126.net/20210714010656/8130cd920dafdeb8bf42ee4129be6748/ymusic/4d01/7d83/509a/f4c46cf9cf224675ffd00eebe411613b.mp3" type="audio/mpeg" autoplay preload loop="loop"></video>
+<video controls autoplay name="media"><source src="../MP3/Let It Go - Idina Menzel.mp3" type="audio/mpeg" autoplay preload loop="loop"></video>
 
-  <audio id="bgmusic" src="../mp3/Let It Go - Idina Menzel.mp3" autoplay preload loop></audio>
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>;
+
+
+<audio id="bgmusic" src="../MP3/Let It Go - Idina Menzel.mp33" autoplay preload loop></audio>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+
+
 <script type="text/javascript">
 autoPlayAudio1();
 function autoPlayAudio1() {
@@ -92,5 +105,8 @@ document.getElementById('bgmusic').play();
 });
 }
 </script>
+
+
+
 </body>
 </html>
