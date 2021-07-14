@@ -6,13 +6,13 @@
 .word-shiyi{display:none;font-size: x-large;}
 .word-danci{font-size: xx-large;}
 
-.footer{ text-align:center; color:#1d3557;margin-top:80px;}
+.footer{ text-align:center; color:#1d3557;margin-top:80px; font-size:1em;}
 .footer a{ text-decoration:none; color:#1d3557;  }
 .btn{ background-color:#FFB3B3; border-radius:15px; text-decoration:none;font-size: x-large; width:200px ; height:40px; text-align:center; margin:0 auto;}
 .btn a{ text-decoration:none; color:#FFF;}
 
 
-.catogary{ text-align:center; color:#1d3557;}
+.catogary{ text-align:center; color:#1d3557; font-size:1.5em; padding-top:20px;}
 .catogary a{ text-decoration:none; color:#1d3557; font-size: xx-large; }
 .line1{ background-color:#f8edeb;}
 .line2{ background-color:#d8e2dc;}
