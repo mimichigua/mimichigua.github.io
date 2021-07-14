@@ -6,16 +6,16 @@
 .word-shiyi{display:none;font-size: x-large;}
 .word-danci{font-size: xx-large;}
 
-.footer{ text-align:center; color:#1d3557;margin-top:80px; font-size:1.5em;}
+.footer{ text-align:center; color:#1d3557;margin-top:80px; font-size:x-large;}
 .footer a{ text-decoration:none; color:#1d3557;  }
 .btn{ background-color:#FFB3B3; border-radius:15px; text-decoration:none;font-size: x-large; width:200px ; height:40px; text-align:center; margin:0 auto;}
 .btn a{ text-decoration:none; color:#FFF;}
 
 
-.catogary{ text-align:center; color:#1d3557; font-size:2em; padding-top:20px;}
+.catogary{ text-align:center; color:#1d3557; font-size:xx-large; padding-top:20px;}
 .catogary a{ text-decoration:none; color:#1d3557; font-size: xx-large; }
 .line1{ background-color:#f8edeb;}
 .line2{ background-color:#d8e2dc;}
 .biaoti{ background-color:#ffb5a7; font-size:larger; font-weight:bold; color:#fff; padding-bottom:5px; padding-top:5px;}
-.biaoge{ background-color:#FFE8E8; text-align:center; height:100%; width:100%; text-align:center; font-size:1.5em;}
-.duyinguize{ border-collapse:0; border-spacing:0; border-color:#eee; border:1; width:100%; font-size:1.5em; text-align:center;}
+.biaoge{ background-color:#FFE8E8; text-align:center; height:100%; width:100%; text-align:center; font-size:x-large;}
+.duyinguize{ border-collapse:0; border-spacing:0; border-color:#eee; border:1; width:100%; font-size:x-large; text-align:center;}
