@@ -7,21 +7,21 @@
 .danci a:visited {text-decoration:none;color:#000;}
 .danci a:hover {color: #408080;}
 
-.word-duyin{display:none;font-family:Lucida Sans Unicode;font-size:1.5em;}
-.word-shiyi{display:none;font-size:1.5em; }
-.word-danci{font-size:3em; font-weight:bold; color:#000;}
+.word-duyin{display:none;font-family:Lucida Sans Unicode;font-size:2em;}
+.word-shiyi{display:none;font-size:2em; }
+.word-danci{font-size:4em; font-weight:bold; color:#000;}
 
 
-.footer{ text-align:center; color:#1d3557;margin-top:80px; font-size:1.5em;}
+.footer{ text-align:center; color:#1d3557;margin-top:80px; font-size:2em;}
 .footer a{ text-decoration:none; color:#1d3557;  }
-.btn{ background-color:#FFB3B3; border-radius:15px; text-decoration:none;font-size: x-large; width:200px ; height:40px; text-align:center; margin:0 auto;}
+.btn{ background-color:#FFB3B3; border-radius:15px; text-decoration:none;font-size:0.75em; width:300px ; height:50px; text-align:center; margin:0 auto;}
 .btn a{ text-decoration:none; color:#FFF;}
 
 
-.catogary{ text-align:center; color:#1d3557; font-size:xx-large; padding-top:20px;}
-.catogary a{ text-decoration:none; color:#1d3557; font-size: xx-large; }
+.catogary{ text-align:center; color:#1d3557; font-size:3em; font-weight:bold; padding-top:20px;}
+.catogary a{ text-decoration:none; color:#1d3557;  }
 .line1{ background-color:#f8edeb;}
 .line2{ background-color:#FFD7D7;}
 .biaoti{ background-color:#7EBEBE; font-size: 2em; font-weight: bolder; color:#fff; padding-bottom:5px; padding-top:5px; padding-top:0.5em; padding-bottom:0.5em; border-collapse:1px; border-left:2#fff solid; border-right:2 #fff solid;border-top:2 #fff solid; border-bottom:2 #fff solid;}
-.biaoge{ background-color:#FFE8E8; text-align:center; height:100%; width:100%; text-align:center; font-size:1.5em; color:#567;}
-.duyinguize{ border-collapse:1; border-spacing:1; border-color:#eee; border:1; width:100%; font-size:2em; text-align:center;border-left:2 #fff solid; border-right:2 #fff solid; border-top:2 #fff solid; border-bottom:2 #fff solid; padding-top:0.5em; padding-bottom:0.5em; color:#333;}
+.biaoge{ background-color:#FFE8E8; text-align:center; height:100%; width:100%; text-align:center; font-size:3em; color:#567;}
+.duyinguize{ border-collapse:1; border-spacing:1; border-color:#eee; border:1; width:100%; font-size:3em; text-align:center;border-left:2 #fff solid; border-right:2 #fff solid; border-top:2 #fff solid; border-bottom:2 #fff solid; padding-top:0.5em; padding-bottom:0.5em; color:#333;}
