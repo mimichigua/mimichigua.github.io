@@ -1,0 +1,113 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" type="text/css" href="css/style.css"/>
+ 
+</head>
+ 
+ 
+ <body>
+ 
+ <img src="../imgs/anna.jpeg" width="100%" />
+ <BR><BR>
+<table width="100%" border="0" style="border-collapse:0; border-spacing:0; border-color:#eee;" class="catogary">
+
+
+
+  <tr>
+    <td><a href="duyinguize/duyinguize.html">读音规则</a></td>
+    <td><a href="https://haokan.baidu.com/v?vid=7215259414120807349&pd=bjh&fr=bjhauthor&type=video" target="_blank">元音和辅音</a></td>
+    
+    
+   
+
+  </tr>
+</table>
+
+
+
+
+
+
+<!--
+<embed  src="../MP3/Do You Want to Build a Snowman.mp3"  autostart=true loop=2 hidden="false"></embed>-->
+
+
+<audio id="Jaudio" class="media-audio" src="../MP3/Do You Want to Build a Snowman.mp3" autoplay preload loop></audio >
+
+<!--
+<SCRIPT>
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+        audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
+
+//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+function audioAutoPlay() {
+    var audio = document.getElementById('audio');
+    audio.play();
+    document.removeEventListener('touchstart',audioAutoPlay);
+}
+
+document.addEventListener('touchstart', audioAutoPlay);
+</script>
+
+-->
+<script>
+function audioAutoPlay(id){
+    var audio = document.getElementById(id),
+        play = function(){
+        audio.play();
+        document.removeEventListener("touchstart",play, false);
+    };
+    audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {//微信
+       play();
+    }, false);
+    document.addEventListener('YixinJSBridgeReady', function() {//易信
+              play();
+        }, false);
+    document.addEventListener("touchstart",play, false);
+}
+audioAutoPlay('Jaudio');
+
+</script>
+<!--<video controls autoplay name="media"><source src="../MP3/Do You Want to Build a Snowman.mp3" type="audio/mpeg" autoplay preload loop="loop"></video>
+
+
+
+<audio id="bgmusic" src="../MP3/Do You Want to Build a Snowman.mp33" autoplay preload loop></audio>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+
+
+
+<script type="text/javascript">
+autoPlayAudio1();
+function autoPlayAudio1() {
+wx.config({
+// 配置信息, 即使不正确也能使用 wx.ready
+debug: false,
+appId: '',
+timestamp: 1,
+nonceStr: '',
+signature: '',
+jsApiList: []
+});
+wx.ready(function() {
+document.getElementById('bgmusic').play();
+});
+}
+</script>
+
+
+
+</body>
+</html>
